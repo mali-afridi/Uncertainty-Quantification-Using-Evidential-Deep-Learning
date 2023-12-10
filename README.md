@@ -30,4 +30,9 @@ This will save model named unc700.pth
 Run python cv_project/resume700_900.py to start training on unc700.pth with EDLLoss() for another 200 epochs with lr = 1e-2
 This will save model named unc900.pth
 
+run inference.py to compare your noising and denoising images uncertainty
+
+run inference_custom.py to infer custom images stored in data/images/custom/ on model unc900.pth and store results in data/images/results/
+
+run confusion_matrix.py to run model's inference on test images of flower 102 and perform uncertainty filtering to give out confusion matrices.
 
