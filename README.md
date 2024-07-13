@@ -1,8 +1,15 @@
 # Uncertianty Quantification (EDL)
 
 The official implementation of my computer vision semester project. Using ResNet50 model on Oxford Flowers102 dataset, I quantify uncertainty on out-of-distribution and noise-induced data to verify robustness of this method.
+<p align="center">
+  <img src="data/images/results/dog.jpeg" height="200">
+  <img src="data/images/results/ali.jpeg" height="200">
+  <img src="data/images/results/many.jpeg" height="200">
+</p>
 
-![image](https://github.com/user-attachments/assets/c428f32d-9275-4f04-aa3b-e9d175b6a74f)
+<p align="center">
+  <img src="data/images/results/inc_pred.png" height="200">
+</p>
 
 ## What's New
 
