@@ -9,6 +9,7 @@ The official implementation of my computer vision semester project. Using ResNet
 
 <p align="center">
   <img src="data/images/results/inc_pred.png" height="200">
+  <img src="data/images/results/pic.jpg" height="200">
 </p>
 
 ## What's New
@@ -68,6 +69,7 @@ For example, feeding in OOD (from data/images/custom) will result in:
   <img src="data/images/results/ali.jpeg" height="200">
   <img src="data/images/results/many.jpeg" height="200">
 </p>
+
 ## Results on Noise Detection (clear vs noisy images)
 To compare your noising and denoising images uncertainty, run
 ```bash
