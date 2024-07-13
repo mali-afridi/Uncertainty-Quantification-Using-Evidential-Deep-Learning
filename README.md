@@ -46,16 +46,18 @@ pip install scipy
 ## Results
 
 We show the effectiveness of this approach to:
+- Recognize OOD
 - Avoid Wrong Predictions 
 - Perform Noise Detection
-- Recognize OOD
-<p align="center"> <img src="docs/figures/fyp670.png" height="200"\></p>
-
+- 
 ## Results on Out of Distribution Data (OOD)
 Use this command to infer custom OOD images stored in data/images/custom/ on model unc900.pth and store results in data/images/results/ 
 ```bash
 python inference_custom.py 
 ```
+For example, feeding in image of dog will result in:  
+<p align="center"> <img src="data/images/results/dog,jpeg" height="200"\></p>
+
 ## Results on Avoiding Wrong Predictions
 To run model's inference on test images of flower 102 and perform uncertainty filtering to give out confusion matrices, use
 ```bash
