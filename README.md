@@ -1,6 +1,8 @@
 # Uncertianty Quantification (EDL)
 
-The official implementation of my Computer Vision Semester Project. Using ResNet50 model on Oxford Flowers102 dataset, I quantify uncertainty on out-of-distribution and noise-induced data to verify robustness of this method.
+The official implementation of my computer vision semester project. Using ResNet50 model on Oxford Flowers102 dataset, I quantify uncertainty on out-of-distribution and noise-induced data to verify robustness of this method.
+
+![image](https://github.com/user-attachments/assets/c428f32d-9275-4f04-aa3b-e9d175b6a74f)
 
 ## What's New
 
@@ -45,9 +47,9 @@ pip install scipy
 
 We show the effectiveness of this approach to:
 - Recognize OOD
-- Avoid Wrong Predictions 
 - Perform Noise Detection
-- 
+- Avoid Wrong Predictions 
+
 ## Results on Out of Distribution Data (OOD)
 Use this command to infer custom OOD images stored in data/images/custom/ on model unc900.pth and store results in data/images/results/ 
 ```bash
@@ -59,11 +61,23 @@ For example, feeding in OOD (from data/images/custom) will result in:
   <img src="data/images/results/ali.jpeg" height="200">
   <img src="data/images/results/many.jpeg" height="200">
 </p>
+## Results on Noise Detection (clear vs noisy images)
+To compare your noising and denoising images uncertainty, run
+```bash
+python inference.py 
+```
+For example, uncertainty score on noisy vs clear image of one test set Flowers102 Image:  
+<p align="center">
+  <img src="no_noise.png" height="200">
+  <img src="noise.png" height="200">
+</p>
+
 ## Results on Avoiding Wrong Predictions
 To run model's inference on test images of flower 102 and perform uncertainty filtering to give out confusion matrices, use
 ```bash
 python confusion_matrix.py
 ```
+
 For Example, more wrong predictions on confusion matrix (left) as compared to uncertainty filter (right)
 <table>
   <tr>
@@ -79,17 +93,6 @@ For Example, more wrong predictions on confusion matrix (left) as compared to un
     </td>
   </tr>
 </table>
-
-## Results on Noise Detection (clear vs noisy images)
-To compare your noising and denoising images uncertainty, run
-```bash
-python inference.py 
-```
-For example, uncertainty score on noisy vs clear image of one test set Flowers102 Image:  
-<p align="center">
-  <img src="no_noise.png" height="200">
-  <img src="noise.png" height="200">
-</p>
 
 ## Training
 
