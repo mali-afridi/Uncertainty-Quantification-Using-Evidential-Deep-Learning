@@ -95,10 +95,10 @@ For Example, more wrong predictions on confusion matrix (left) as compared to un
   </tr>
   <tr>
     <td align="left">
-      <img src="non_unc_filter_confusion_matrix_subplot_20_to_39.png" height="400">
+      <img src="non_unc_filter_confusion_matrix_subplot_20_to_39.png" height="400",width="400">
     </td>
     <td align="center">
-      <img src="unc_filter_confusion_matrix_subplot_20_to_39.png" height="400">
+      <img src="unc_filter_confusion_matrix_subplot_20_to_39.png" height="400",width="400">
     </td>
   </tr>
 </table>
@@ -122,13 +122,13 @@ This will save model named unc500.pth
 
 To start training on unc500.pth with EDLLoss() for another 200 epochs with lr = 2e-5
 ```bash
-Run python cv_project/resume500_700.py 
+Run python resume500_700.py 
 ```
 This will save model named unc700.pth
 
 To start training on unc700.pth with EDLLoss() for another 200 epochs with lr = 1e-2
 ```bash
-Run python cv_project/resume700_900.py 
+Run python resume700_900.py 
 ```
 This will save model named unc900.pth
 
