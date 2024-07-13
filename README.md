@@ -56,7 +56,7 @@ Use this command to infer custom OOD images stored in data/images/custom/ on mod
 python inference_custom.py 
 ```
 For example, feeding in image of dog will result in:  
-<p align="center"> <img src="data/images/results/dog,jpeg" height="200"\></p>
+<p align="center"> <img src="data/images/results/dog.jpeg" height="200"\></p>
 
 ## Results on Avoiding Wrong Predictions
 To run model's inference on test images of flower 102 and perform uncertainty filtering to give out confusion matrices, use
@@ -69,6 +69,9 @@ To compare your noising and denoising images uncertainty, run
 ```bash
 python inference.py 
 ```
+For example, uncertainty score on noisy vs clear image of one test set Flowers102 Image:  
+<p align="left"> <img src="no_noise.png" height="200"\></p>
+<p align="center"> <img src="noise.png" height="200"\></p>
 
 ## Training
 
