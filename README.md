@@ -2,8 +2,6 @@
 
 The official implementation of my Computer Vision Semester Project. Using ResNet50 model on Oxford Flowers102 dataset, I quantify uncertainty on out-of-distribution and noise-induced data to verify robustness of this method.
 
-![image](https://github.com/user-attachments/assets/7487d8da-35c5-42bf-892e-d78bba49495f)
-
 ## What's New
 
 - Added support of Noise Detection
@@ -55,9 +53,12 @@ Use this command to infer custom OOD images stored in data/images/custom/ on mod
 ```bash
 python inference_custom.py 
 ```
-For example, feeding in image of dog (from data/images/custom) will result in:  
-<p align="left"> <img src="data/images/results/dog.jpeg" height="220"\></p>
-
+For example, feeding in OOD (from data/images/custom) will result in:  
+<p align="center">
+  <img src="data/images/results/dog.jpeg" height="200">
+  <img src="data/images/results/ali.jpeg" height="200">
+  <img src="data/images/results/many.jpeg" height="200">
+</p>
 ## Results on Avoiding Wrong Predictions
 To run model's inference on test images of flower 102 and perform uncertainty filtering to give out confusion matrices, use
 ```bash
@@ -71,10 +72,10 @@ For Example, more wrong predictions on confusion matrix (left) as compared to un
   </tr>
   <tr>
     <td align="left">
-      <img src="non_unc_filter_confusion_matrix_subplot_20_to_39.png" height="200">
+      <img src="non_unc_filter_confusion_matrix_subplot_20_to_39.png" height="400">
     </td>
     <td align="center">
-      <img src="unc_filter_confusion_matrix_subplot_20_to_39.png" height="200">
+      <img src="unc_filter_confusion_matrix_subplot_20_to_39.png" height="400">
     </td>
   </tr>
 </table>
