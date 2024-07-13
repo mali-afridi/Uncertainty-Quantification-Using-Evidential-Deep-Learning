@@ -9,7 +9,7 @@ The official implementation of my computer vision semester project. Using ResNet
 
 <p align="center">
   <img src="data/images/results/inc_pred.png" height="200">
-  <img src="data/images/results/pic.jpg" height="160">
+  <img src="data/images/results/pic.jpg" height="180">
 </p>
 
 ## What's New
