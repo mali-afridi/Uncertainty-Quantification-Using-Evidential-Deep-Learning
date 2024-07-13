@@ -55,14 +55,29 @@ Use this command to infer custom OOD images stored in data/images/custom/ on mod
 ```bash
 python inference_custom.py 
 ```
-For example, feeding in image of dog will result in:  
-<p align="center"> <img src="data/images/results/dog.jpeg" height="200"\></p>
+For example, feeding in image of dog (from data/images/custom) will result in:  
+<p align="left"> <img src="data/images/results/dog.jpeg" height="220"\></p>
 
 ## Results on Avoiding Wrong Predictions
 To run model's inference on test images of flower 102 and perform uncertainty filtering to give out confusion matrices, use
 ```bash
 python confusion_matrix.py
 ```
+For Example, more wrong predictions on confusion matrix (left) as compared to uncertainty filter (right)
+<table>
+  <tr>
+    <th>No Uncertainty Filter</th>
+    <th>Uncertainty Filter (0.65)</th>
+  </tr>
+  <tr>
+    <td align="left">
+      <img src="non_unc_filter_confusion_matrix_subplot_20_to_39.png" height="200">
+    </td>
+    <td align="center">
+      <img src="unc_filter_confusion_matrix_subplot_20_to_39.png" height="200">
+    </td>
+  </tr>
+</table>
 
 ## Results on Noise Detection (clear vs noisy images)
 To compare your noising and denoising images uncertainty, run
@@ -70,8 +85,10 @@ To compare your noising and denoising images uncertainty, run
 python inference.py 
 ```
 For example, uncertainty score on noisy vs clear image of one test set Flowers102 Image:  
-<p align="left"> <img src="no_noise.png" height="200"\></p>
-<p align="center"> <img src="noise.png" height="200"\></p>
+<p align="center">
+  <img src="no_noise.png" height="200">
+  <img src="noise.png" height="200">
+</p>
 
 ## Training
 
